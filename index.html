@@ -2,6 +2,20 @@
     <head>
         <title>Practice Page</title>
         <style>
+            @keyframes size-change {
+                0% {width: 10%;}
+                25%  {width: 25%;}
+                50%  {width: 50%;}
+                100% {width: 100%;}
+            }
+            @keyframes new-size-change {
+                from {width: 10%;}
+                to {width: 100%;}
+            }
+            @keyframes shrink-size {
+                from {width: 100%;}
+                to { width: 10%;}
+            }
             #header div
             {
                 padding:20px;
@@ -21,6 +35,16 @@
                 position: relative;
                 left: 8rem;
                 display: none;
+            }
+            .new-btn-class
+            {
+                animation-name:new-size-change;
+                animation-duration: 5s;
+            }
+            .shrink
+            {
+                animation-name:shrink-size;
+                animation-duration: 5s;
             }
         </style>
     </head>
@@ -45,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="clickmebtn">
-                    <button>Click Me!</button>
+                    <button class="btn-class">Click Me!</button>
                 </div>
             </div>
         </div>
