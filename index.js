@@ -5,7 +5,6 @@ for(var i=0;i<listItem.length;i++)
 {
     listItem[i].innerHTML=listItems[i];
 }
-console.log(listItem);
 var li = document.querySelector('.container > .list > ul > li:nth-child(3)');
 var textField = document.querySelector('input[type=text]');
 let count = 0;
