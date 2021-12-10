@@ -39,3 +39,13 @@ textField.addEventListener('keyup',function()
         writingDiv.style.display="none";
 });
 
+var lastbtn = document.querySelector('.clickmebtn > button');
+lastbtn.addEventListener("mouseover",function(){
+    lastbtn.classList.add("new-btn-class");
+    lastbtn.classList.remove("shrink");
+});
+
+lastbtn.addEventListener("mouseout",function(){
+    lastbtn.classList.remove("new-btn-class");
+    lastbtn.classList.add("shrink");
+});
